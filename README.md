@@ -309,3 +309,5 @@ scott-spark-simulator/
 ```
 
 **Proxima stack**: GUI e, para desempenho/portabilidade, colocar o solver em C/C++.
+
+O próximo passo é transformar esse MVP em um modelo da Spark real, colocando as coordenadas dos pivôs e pontos de fixação reais. A partir daí podemos evoluir para anti-squat, anti-rise, pedal kickback, SAG, mola/amortecedor e análise de forças.
