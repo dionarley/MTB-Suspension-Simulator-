@@ -1,7 +1,3 @@
-# MTB-Suspension-Simulator-
-MTB Suspension Simulator 
-
-
 
 
 
@@ -293,7 +289,7 @@ E visualmente:
 
 ### Estrutura do projeto
 
-Começar em **Python + NumPy + Matplotlib**, porque fica muito mais fácil validar a matemática.
+Eu sugiro começarmos em **Python + NumPy + Matplotlib**, porque fica muito mais fácil validar a matemática.
 
 ```
 scott-spark-simulator/
@@ -311,4 +307,4 @@ scott-spark-simulator/
 └── README.md
 ```
 
-Proxima stack : GUI e, para desempenho/portabilidade, colocar o solver em C/C++.
+Depois podemos fazer uma GUI e, se você quiser desempenho/portabilidade, colocar o solver em C/C++.
