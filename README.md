@@ -142,13 +142,13 @@ O **instant center** é particularmente importante: em sistemas multi-link ele m
 
 ----------
 
-## E eu não começaria pelo C puro
+## Não começar C puro
 
-Para esse projeto, eu faria:
+Para esse projeto :
 
 **Python + NumPy + Matplotlib** primeiro.
 
-Depois, se quiser transformar em software:
+Depois, se quisermos transformar em software:
 
 ```
 Python
@@ -170,9 +170,7 @@ solver
 GTK/SDL/OpenGL
 ```
 
-Inclusive existe um projeto open source de análise de suspensão 4-bar em Python que calcula trajetória do eixo e instant center, embora o próprio projeto avise que a precisão é limitada.
-
-### O primeiro MVP que eu faria para você
+### O primeiro MVP
 
 **Versão 0.1 — somente cinemática:**
 
@@ -232,15 +230,14 @@ E gerar automaticamente:
                 Travel
 ```
 
-Depois podemos adicionar **massa do ciclista, gravidade, mola/amortecedor, SAG e forças**, mas eu separaria isso da cinemática inicialmente.
+Podemos adicionar **massa do ciclista, gravidade, mola/amortecedor, SAG e forças**, mas e importante  separar isso da cinemática inicialmente.
 
-**Se você tiver um quadro MTB específico em mente**, uma foto lateral do quadro é extremamente útil para transformar isso em um modelo real — principalmente para identificar os pivôs, rocker e pontos de fixação do shock.
+**Para um quadro MTB específico**, uma foto lateral do quadro é extremamente útil para transformar isso em um modelo real — principalmente para identificar os pivôs, rocker e pontos de fixação do shock.
 
 Com uma foto lateral + algumas medidas, dá para montar o primeiro **solver de suspensão 2D** em Python e depois portar o núcleo para C.
 
-scott spark
 
-Sim — **Scott Spark** é um ótimo caso para esse simulador, porque podemos modelar a cinemática real do quadro em vez de fazer apenas uma animação genérica.
+**Scott Spark** é um ótimo caso para esse simulador, porque podemos modelar a cinemática real do quadro em vez de fazer apenas uma animação genérica.
 
 Para montar um modelo confiável, preciso de uma **vista lateral da Spark que você quer simular** (idealmente com a roda traseira e o sistema de links visíveis). Se tiver uma foto, desenho técnico ou captura com as medidas, envie aqui.
 
@@ -311,4 +308,4 @@ scott-spark-simulator/
 └── README.md
 ```
 
-Proxima stack : GUI e, para desempenho/portabilidade, colocar o solver em C/C++.
+**Proxima stack**: GUI e, para desempenho/portabilidade, colocar o solver em C/C++.
